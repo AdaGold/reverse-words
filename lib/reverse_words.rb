@@ -1,5 +1,7 @@
-# Helper method for partial string reversal
-# Reverses the character from start_index to end_index
+# Helper method to reverse a word.
+# Characters between start_index to end_index (both
+# inclusive) form a word.
+# Reverses the characters from start_index to end_index.
 def partial_reverse(my_string, start_index, end_index)
   i = start_index
   j = end_index
@@ -42,5 +44,8 @@ def reverse_words(my_words)
 
     partial_reverse(my_words, start_index, end_index) # reverse the word
   end
-  return
+
+  return 
+  # since the string manipulation is done in-place,
+  # there's no need to return the string
 end
